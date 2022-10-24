@@ -20,16 +20,6 @@ nav {
   justify-content: space-between;
 }
 
-nav div {
-  height: 40px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #EBEAED;
-  border-radius: 100px;
-}
-
 .navbar-title {
   height: 32px;
   font-family: 'DM Sans', sans-serif;
@@ -38,6 +28,16 @@ nav div {
   font-size: 24px;
   line-height: 31px;
   color: #1e0e62;
+}
+
+nav div {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #EBEAED;
+  border-radius: 100px;
 }
 
 .navbar-button {
@@ -52,6 +52,7 @@ nav div {
 /* Presentation */
 .presentation-container {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -91,6 +92,10 @@ nav div {
 }
 
 /* My skills */
+.skills-container {
+  width: 100%;
+}
+
 .skills-title {
   margin-bottom: 20px;
   display: block;
@@ -150,6 +155,7 @@ nav div {
 
 /* Experience */
 .experience-container {
+  width: 100%;
   background-color: #ffffff;
   padding: 100px 0 122px 0;
   display: flex;
@@ -241,6 +247,7 @@ nav div {
 /* Contact me */
 .contact-me-section {
   background-color: #F1F1F1;
+  width: 100%;
   padding: 194px 0 197px 0;
 }
 
@@ -279,4 +286,100 @@ nav div {
   margin: 0 30px;
   height: 21.89px;
   width: 21.89px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+
+  /* Nav bar */
+  nav {
+    width: 600px;
+    height: 100px;
+    padding: 30px 30px 0 27px;;
+  }
+
+  /* Presentation */
+  .presentation-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px;
+  }
+
+  .presentation-content {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .presentation-container img {
+    width: 359px;
+    height: 236px;
+  }
+
+  /* Skills */
+  .skills-title {
+    padding-left: 48px;
+    text-align: left;
+  }
+
+  .skills-introduction {
+    width: 458px;
+    height: 153px;
+    text-align: left;
+    padding-left: 48px;
+    margin: 0;
+  }
+
+  .skills-cards {
+    margin: 21px 0 72px 0;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 48px;
+    row-gap: 50px;
+  }
+
+  /* Experience */
+  .experience-container {
+    width: 600px;
+  }
+
+  .experience-introduction {
+    width: 458px;
+  }
+
+  .experience-cards {
+    grid-template-columns: auto;
+    grid-row-gap: 50px;
+  }
+
+  .exp-card {
+    width: 509px;
+  }
+
+  .exp-img {
+    width: 509px;
+    height: 255px;
+  }
+
+  /* Contact me */
+  .contact-me-section {
+    padding: 99px 0 100px 0;
+    width: 600px;
+  }
+
+  .contact-me-title {
+    width: 273px;
+    font-size: 22px;
+    margin: 0 auto;
+  }
+
+  .contact-me-email {
+    width: 273px;
+    font-size: 22px;
+    margin: 0 auto;
+  }
+
+  .contact-me-div {
+    padding-top: 40px;
+  }
+
 }
